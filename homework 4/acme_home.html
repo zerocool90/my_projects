@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acme Widgets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header class="top"><img src="acme_widgets_pic.png"></header>
+        <nav class="flex-nav">
+            <a href="#" class="toggleNav"> &#9776;  Menu</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="new_york_times_homework/new_york_times_bestseller_list.html">NY Times</a></li>
+                <li><a href="new_york_times_homework/api_documentation.html">API Documentation</a></li>
+                <li class="social"><a href="http://www.github.com"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+
+        </nav>
+        <section class="details"><p>ACME Widgets specializes in AJAX access to the NY Times book site</p><p>Click the NY Times Nav button and give us a try today!</p></section>
+        <footer> <p>&#169; ACME INCORPERATED</p></footer>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.toggleNav').on('click',function(){
+       $('.flex-nav ul').toggleClass('open'); 
+        
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acme Widgets</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header class="top"><img src="../acme_widgets_pic.png"></header>
+        <nav class="flex-nav">
+            <a href="#" class="toggleNav"> &#9776;  Menu</a>
+            <ul>
+                <li><a href="/acme_home.html">Home</a></li>
+                <li><a href="#">NY Times</a></li>
+                <li><a href="#">API Documentation</a></li>
+                <li class="social"><a href="http://www.github.com"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+
+        </nav>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.toggleNav').on('click',function(){
+       $('.flex-nav ul').toggleClass('open'); 
+        
+        });
+    });
+    </script>
+        <h1>New York Times Best Selling Books</h1>
+<form name='myform' method='post'>
+    
+    
+    
+<input type=radio name='type' onclick="typefinder()"> Non-Ficition
+<input type=radio name='type' onclick="typefinder()"> Fiction
+<br>
+
+<input type=radio name='top' value='top_5' onclick="typefinder()"> Top 5
+<input type=radio name='top' value='top_10' onclick="typefinder()">Top 10
+<input type=radio name='top' value='top_20' onclick="typefinder()"> Top 20
+    
+
+</form>
+    <div id="seven_lions"></div>
+
+<div class="container"><table style="width:100%" id="table">
+
+    </table></div>
+    <script src="nipples.js"></script>
+    </body>
+</html>
